@@ -37,12 +37,15 @@ def parse_dividend(symbol, data):
     pay_date = strict_date(item.get("next_pay_date")) or strict_date(item.get("next_payment_date"))
     amount = positive(item.get("next_amount")) or positive(item.get("next_dividend_amount"))
     annual = positive(item.get("annual_amount"))
+    frequency = str(item.get("frequency") or "").strip().lower()
+    if frequency not in ("monthly", "quarterly", "semiannual", "semi-annually", "annual", "annually", "yearly", "weekly"):
+        frequency = None
     if not ex_date and not pay_date:
         return None
     return {
         "symbol": symbol, "as_of": as_of, "next_ex_date": ex_date,
         "next_pay_date": pay_date, "next_declared_amount_usd": amount,
-        "annual_amount_usd": annual,
+        "annual_amount_usd": annual, "payment_frequency": frequency,
         "source_url": f"https://smarterdividends.com/stocks/{symbol}",
         "source": SOURCE, "date_status": "provider_reported",
         "is_actual_receipt": False,

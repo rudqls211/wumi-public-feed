@@ -1,5 +1,23 @@
 {
   "public_quote_symbols": [],
   "dart_corp_codes": [],
-  "notes": "No personal holdings. Stock feed intentionally disabled until redistribution license confirmed."
+  "notes": "Fixed public reference list only (not anyone's holdings). Request provider updates reasonably; each item credits original SmarterDividends stock page.",
+  "us_dividend_symbols": [
+    "AAPL",
+    "DGRO",
+    "JEPI",
+    "JEPQ",
+    "KO",
+    "MSFT",
+    "O",
+    "QQQ",
+    "SCHD",
+    "SGOV",
+    "SPY",
+    "VTI",
+    "VOO",
+    "VYM",
+    "QYLD",
+    "XYLD"
+  ]
 }

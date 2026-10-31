@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "dataset": "tax_policy",
+  "status": "unavailable",
+  "generated_at": "2026-10-31T00:00:00Z",
+  "source_at": null,
+  "provider": "Operator reviewed policy",
+  "data": {},
+  "note": "검증된 세법 기준 미등록"
+}

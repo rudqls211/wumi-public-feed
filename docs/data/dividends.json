@@ -1,10 +1,10 @@
 {
-  "schema_version": 1,
-  "dataset": "dividends",
-  "status": "unavailable",
-  "generated_at": "2026-10-31T00:00:00Z",
-  "source_at": null,
-  "provider": "OpenDART",
   "data": {},
-  "note": "배당 자료 게시 미설정"
+  "dataset": "dividends",
+  "generated_at": "2026-10-31T02:46:31Z",
+  "note": "국내 공시 재제공 이용조건 확인 전. 해외 배당 미연동",
+  "provider": "OpenDART (redisplay review)",
+  "schema_version": 1,
+  "source_at": null,
+  "status": "unavailable"
 }

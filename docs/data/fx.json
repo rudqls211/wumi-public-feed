@@ -1,10 +1,35 @@
 {
-  "schema_version": 1,
+  "data": {
+    "CNY": {
+      "currency": "CNY",
+      "krw_per_unit": 200.73,
+      "source_at": "2026-10-30",
+      "unit": 1
+    },
+    "EUR": {
+      "currency": "EUR",
+      "krw_per_unit": 1493.18,
+      "source_at": "2026-10-30",
+      "unit": 1
+    },
+    "JPY": {
+      "currency": "JPY",
+      "krw_per_unit": 8.4744,
+      "source_at": "2026-10-30",
+      "unit": 1
+    },
+    "USD": {
+      "currency": "USD",
+      "krw_per_unit": 1336.45,
+      "source_at": "2026-10-30",
+      "unit": 1
+    }
+  },
   "dataset": "fx",
-  "status": "unavailable",
-  "generated_at": "2026-10-31T00:00:00Z",
-  "source_at": null,
-  "provider": "Frankfurter",
-  "data": {},
-  "note": "첫 Actions 실행 전"
+  "generated_at": "2026-10-31T02:46:31Z",
+  "note": null,
+  "provider": "Frankfurter daily reference rates",
+  "schema_version": 1,
+  "source_at": "2026-10-30",
+  "status": "ok"
 }

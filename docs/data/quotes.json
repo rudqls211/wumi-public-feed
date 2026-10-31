@@ -1,10 +1,10 @@
 {
-  "schema_version": 1,
-  "dataset": "quotes",
-  "status": "unavailable",
-  "generated_at": "2026-10-31T00:00:00Z",
-  "source_at": null,
-  "provider": "License-gated provider",
   "data": {},
-  "note": "시세 재배포 권한 확인 전"
+  "dataset": "quotes",
+  "generated_at": "2026-10-31T02:46:31Z",
+  "note": "해외 종가 재배포 이용권 확인 전",
+  "provider": "License-gated quote provider",
+  "schema_version": 1,
+  "source_at": null,
+  "status": "unavailable"
 }

@@ -1,16 +1,16 @@
 {
-  "schema_version": 1,
-  "dataset": "index",
-  "status": "ok",
-  "generated_at": "2026-10-31T00:00:00Z",
-  "source_at": null,
-  "provider": "WUMI shared data",
   "data": {
-    "fx": "fx.json",
-    "quotes": "quotes.json",
     "dividends": "dividends.json",
-    "tax_policy": "tax_policy.json",
-    "holidays": "holidays.json"
+    "fx": "fx.json",
+    "holidays": "holidays.json",
+    "quotes": "quotes.json",
+    "tax_policy": "tax_policy.json"
   },
-  "note": null
+  "dataset": "index",
+  "generated_at": "2026-10-31T02:46:31Z",
+  "note": null,
+  "provider": "WUMI shared data",
+  "schema_version": 1,
+  "source_at": null,
+  "status": "ok"
 }

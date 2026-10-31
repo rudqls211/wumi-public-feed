@@ -1,10 +1,10 @@
 {
-  "schema_version": 1,
-  "dataset": "holidays",
-  "status": "unavailable",
-  "generated_at": "2026-10-31T00:00:00Z",
-  "source_at": null,
-  "provider": "KASI special days",
   "data": {},
-  "note": "공휴일 서비스 미설정"
+  "dataset": "holidays",
+  "generated_at": "2026-10-31T02:46:31Z",
+  "note": "공휴일 API 키 미등록",
+  "provider": "KASI special days",
+  "schema_version": 1,
+  "source_at": null,
+  "status": "unavailable"
 }

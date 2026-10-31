@@ -148,6 +148,40 @@ def collect_dividends(catalog):
         catalog.get("us_dividend_symbols", []), old.get("us", {}))
     kr_result = collect_kr_dividends(catalog)
     data = {}
+    # Archive only publicly observed ex-dates, not inferred payments or positions.
+    # Retain a bounded 24-month date window; never reconstruct before first collection.
+    today = dt.datetime.now(dt.timezone.utc).date()
+    earliest = today - dt.timedelta(days=730)
+    future_limit = today + dt.timedelta(days=366)
+    old_history = old.get("us_history", {})
+    history = {}
+    public_codes = set(catalog.get("us_dividend_symbols", []))
+    if isinstance(old_history, dict):
+        for code, items in old_history.items():
+            if code not in public_codes or not isinstance(items, list):
+                continue
+            for item in items[:100]:
+                if not isinstance(item, dict) or item.get("symbol") != code:
+                    continue
+                date = item.get("next_ex_date")
+                try:
+                    parsed = dt.date.fromisoformat(str(date))
+                except ValueError:
+                    continue
+                if earliest <= parsed <= future_limit:
+                    history.setdefault(code, {})[str(date)] = item
+    for code, item in us.items():
+        date = item.get("next_ex_date")
+        try:
+            parsed = dt.date.fromisoformat(str(date))
+        except ValueError:
+            continue
+        if earliest <= parsed <= future_limit:
+            history.setdefault(code, {})[str(date)] = dict(item)
+    history = {code: [v for _, v in sorted(records.items())][-50:]
+               for code, records in history.items() if records}
+    if history:
+        data["us_history"] = history
     if us:
         data["us"] = us
         data["us_attribution"] = {

@@ -384,7 +384,8 @@
       "name_ko": "삼성전자",
       "aliases": [
         "samsung electronics"
-      ]
+      ],
+      "exchange": "KOSPI"
     },
     {
       "market": "KR",
@@ -393,7 +394,8 @@
       "aliases": [
         "에스케이하이닉스",
         "sk hynix"
-      ]
+      ],
+      "exchange": "KOSPI"
     },
     {
       "market": "KR",
@@ -402,7 +404,8 @@
       "aliases": [
         "현대자동차",
         "hyundai motor"
-      ]
+      ],
+      "exchange": "KOSPI"
     },
     {
       "market": "KR",
@@ -410,7 +413,8 @@
       "name_ko": "기아",
       "aliases": [
         "kia"
-      ]
+      ],
+      "exchange": "KOSPI"
     },
     {
       "market": "KR",
@@ -418,7 +422,8 @@
       "name_ko": "NAVER",
       "aliases": [
         "네이버"
-      ]
+      ],
+      "exchange": "KOSPI"
     },
     {
       "market": "KR",
@@ -426,7 +431,8 @@
       "name_ko": "카카오",
       "aliases": [
         "kakao"
-      ]
+      ],
+      "exchange": "KOSPI"
     },
     {
       "market": "KR",
@@ -434,7 +440,8 @@
       "name_ko": "셀트리온",
       "aliases": [
         "celltrion"
-      ]
+      ],
+      "exchange": "KOSPI"
     },
     {
       "market": "KR",
@@ -442,7 +449,8 @@
       "name_ko": "LG에너지솔루션",
       "aliases": [
         "엘지에너지솔루션"
-      ]
+      ],
+      "exchange": "KOSPI"
     },
     {
       "market": "KR",
@@ -450,7 +458,8 @@
       "name_ko": "삼성바이오로직스",
       "aliases": [
         "samsung biologics"
-      ]
+      ],
+      "exchange": "KOSPI"
     },
     {
       "market": "KR",
@@ -458,7 +467,8 @@
       "name_ko": "POSCO홀딩스",
       "aliases": [
         "포스코홀딩스"
-      ]
+      ],
+      "exchange": "KOSPI"
     },
     {
       "market": "KR",
@@ -466,7 +476,8 @@
       "name_ko": "삼성SDI",
       "aliases": [
         "삼성에스디아이"
-      ]
+      ],
+      "exchange": "KOSPI"
     },
     {
       "market": "KR",
@@ -474,7 +485,8 @@
       "name_ko": "현대모비스",
       "aliases": [
         "hyundai mobis"
-      ]
+      ],
+      "exchange": "KOSPI"
     },
     {
       "market": "KR",
@@ -482,7 +494,8 @@
       "name_ko": "삼성물산",
       "aliases": [
         "samsung c&t"
-      ]
+      ],
+      "exchange": "KOSPI"
     },
     {
       "market": "KR",
@@ -490,7 +503,8 @@
       "name_ko": "하나금융지주",
       "aliases": [
         "하나금융"
-      ]
+      ],
+      "exchange": "KOSPI"
     },
     {
       "market": "KR",
@@ -499,7 +513,8 @@
       "aliases": [
         "코덱스200",
         "kodex200"
-      ]
+      ],
+      "exchange": "KOSPI"
     },
     {
       "market": "KR",
@@ -508,7 +523,8 @@
       "aliases": [
         "타이거200",
         "tiger200"
-      ]
+      ],
+      "exchange": "KOSPI"
     },
     {
       "market": "KR",
@@ -517,7 +533,8 @@
       "aliases": [
         "타이거미국sp500",
         "tiger미국s&p500"
-      ]
+      ],
+      "exchange": "KOSPI"
     },
     {
       "market": "KR",
@@ -525,7 +542,8 @@
       "name_ko": "TIGER 미국나스닥100",
       "aliases": [
         "타이거나스닥100"
-      ]
+      ],
+      "exchange": "KOSPI"
     },
     {
       "market": "KR",
@@ -533,7 +551,8 @@
       "name_ko": "KODEX 미국S&P500",
       "aliases": [
         "코덱스미국sp500"
-      ]
+      ],
+      "exchange": "KOSPI"
     },
     {
       "market": "US",

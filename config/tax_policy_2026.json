@@ -1,40 +1,11 @@
 {
   "year": 2026,
   "reviewed_by_operator": false,
-  "source_verified_reference": true,
-  "reviewed_at": "2026-10-31",
-  "reference_only": true,
-  "app_calculation_allowed": false,
-  "legal_status": "2026 current statutory reference; eligibility, exceptions and local income tax not automatically assessed",
-  "sources": [
-    {
-      "title": "소득세법 제59조의3",
-      "url": "https://www.law.go.kr/lsLinkCommonInfo.do?lsJoLnkSeq=1032951711"
-    },
-    {
-      "title": "조세특례제한법 제87조",
-      "url": "https://www.law.go.kr/LSW/lsLinkCommonInfo.do?lsJoLnkSeq=1031132127"
-    },
-    {
-      "title": "국세청 연금계좌 세액공제 안내",
-      "url": "https://j.nts.go.kr/nts/cm/cntnts/cntntsView.do?cntntsId=7875&mi=6439"
-    }
-  ],
+  "reviewed_at": null,
+  "notes": "Reference only; unverified draft. Do not enable remotely or modify WUMI financial/tax calculations until official Korean tax-law review.",
   "pension_savings_credit_cap_krw": 6000000,
   "pension_combined_credit_cap_krw": 9000000,
-  "pension_credit_salary_threshold_krw": 55000000,
-  "pension_credit_total_income_threshold_krw": 45000000,
-  "pension_credit_rate_low_income": 0.15,
-  "pension_credit_rate_high_income": 0.12,
-  "isa_conversion_extra_credit_limit_krw": 3000000,
   "housing_subscription_income_deduction_contribution_cap_krw": 3000000,
   "housing_subscription_income_deduction_rate": 0.4,
-  "housing_subscription_salary_threshold_krw": 70000000,
-  "housing_subscription_max_income_deduction_krw": 1200000,
-  "eligibility_notes": [
-    "주택청약 소득공제는 총급여 7,000만원 이하 등 추가 요건이 있으며 무주택 세대주 또는 배우자 등 법률상 자격 확인 필요",
-    "연금 세액공제의 15%와 12%는 소득세법상 공제율이며 지방소득세 효과를 포함하지 않음",
-    "ISA 전환 추가한도는 별도 요건이 충족될 때만 적용",
-    "법 개정·개별 자격·중도해지·이전 납입액 등 조건은 앱이 자동 판정하지 않음"
-  ]
+  "housing_subscription_salary_threshold_krw": 70000000
 }

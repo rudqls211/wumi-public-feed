@@ -66,7 +66,7 @@ def build(fetcher=None, output=DEST, min_count=1500):
     try:
         entries = parse_sec(fetcher(), min_count=min_count)
         source_used = URL
-    except Exception:
+    except (OSError, TimeoutError):
         # SEC blocks shared GitHub Actions runners sometimes. Only public SEC-derived
         # metadata from an open-source daily-updated mirror is accepted as fallback.
         mirror_request = Request(MIRROR, headers={"User-Agent": "WUMI-public-feed/1.0"})

@@ -2,7 +2,7 @@
   "schema_version": 1,
   "dataset": "stock_names",
   "updated_at": "2026-10-31",
-  "source": "WUMI manually curated display aliases; not a licensed market-price feed",
+  "source": "WUMI hand-curated Korean search aliases; SEC-derived US ticker directory used only for identifier cross-check; no price data",
   "entries": [
     {
       "market": "US",
@@ -533,6 +533,894 @@
       "name_ko": "KODEX 미국S&P500",
       "aliases": [
         "코덱스미국sp500"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "BRK-B",
+      "name_ko": "버크셔 해서웨이 B",
+      "aliases": [
+        "버크셔",
+        "berkshire"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "DNA",
+      "name_ko": "징코 바이오웍스",
+      "aliases": [
+        "징코바이오웍스",
+        "ginkgo"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "JPM",
+      "name_ko": "JP모건 체이스",
+      "aliases": [
+        "제이피모건",
+        "jp morgan"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "V",
+      "name_ko": "비자",
+      "aliases": [
+        "visa"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "MA",
+      "name_ko": "마스터카드",
+      "aliases": [
+        "mastercard"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "MCD",
+      "name_ko": "맥도날드",
+      "aliases": [
+        "mcdonalds"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "DIS",
+      "name_ko": "월트 디즈니",
+      "aliases": [
+        "디즈니",
+        "disney"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "COST",
+      "name_ko": "코스트코",
+      "aliases": [
+        "costco"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "WMT",
+      "name_ko": "월마트",
+      "aliases": [
+        "walmart"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "NKE",
+      "name_ko": "나이키",
+      "aliases": [
+        "nike"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "SBUX",
+      "name_ko": "스타벅스",
+      "aliases": [
+        "starbucks"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "LEN",
+      "name_ko": "레나",
+      "aliases": [
+        "lennar"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "HD",
+      "name_ko": "홈디포",
+      "aliases": [
+        "home depot"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "LOW",
+      "name_ko": "로우스",
+      "aliases": [
+        "lowes"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "TGT",
+      "name_ko": "타깃",
+      "aliases": [
+        "target"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "PG",
+      "name_ko": "프록터앤드갬블",
+      "aliases": [
+        "피앤지",
+        "p&g"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "PFE",
+      "name_ko": "화이자",
+      "aliases": [
+        "pfizer"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "MRK",
+      "name_ko": "머크",
+      "aliases": [
+        "merck"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "ABBV",
+      "name_ko": "애브비",
+      "aliases": [
+        "abbvie"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "UNH",
+      "name_ko": "유나이티드헬스",
+      "aliases": [
+        "unitedhealth"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "XOM",
+      "name_ko": "엑슨모빌",
+      "aliases": [
+        "exxon mobil"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "CVX",
+      "name_ko": "셰브론",
+      "aliases": [
+        "chevron"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "BAC",
+      "name_ko": "뱅크오브아메리카",
+      "aliases": [
+        "뱅오아",
+        "bank of america"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "WFC",
+      "name_ko": "웰스파고",
+      "aliases": [
+        "wells fargo"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "GS",
+      "name_ko": "골드만삭스",
+      "aliases": [
+        "goldman sachs"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "MS",
+      "name_ko": "모건스탠리",
+      "aliases": [
+        "morgan stanley"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "IBM",
+      "name_ko": "IBM",
+      "aliases": [
+        "아이비엠"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "ORCL",
+      "name_ko": "오라클",
+      "aliases": [
+        "oracle"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "CRM",
+      "name_ko": "세일즈포스",
+      "aliases": [
+        "salesforce"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "ADBE",
+      "name_ko": "어도비",
+      "aliases": [
+        "adobe"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "CSCO",
+      "name_ko": "시스코",
+      "aliases": [
+        "cisco"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "QCOM",
+      "name_ko": "퀄컴",
+      "aliases": [
+        "qualcomm"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "TXN",
+      "name_ko": "텍사스 인스트루먼트",
+      "aliases": [
+        "texas instruments"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "UBER",
+      "name_ko": "우버",
+      "aliases": [
+        "uber"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "ABNB",
+      "name_ko": "에어비앤비",
+      "aliases": [
+        "airbnb"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "PYPL",
+      "name_ko": "페이팔",
+      "aliases": [
+        "paypal"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "SHOP",
+      "name_ko": "쇼피파이",
+      "aliases": [
+        "shopify"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "SNOW",
+      "name_ko": "스노우플레이크",
+      "aliases": [
+        "snowflake"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "SMR",
+      "name_ko": "뉴스케일 파워",
+      "aliases": [
+        "뉴스케일",
+        "nuscale"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "DIA",
+      "name_ko": "SPDR 다우존스 ETF",
+      "aliases": [
+        "다우존스etf"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "BA",
+      "name_ko": "보잉",
+      "aliases": [
+        "boeing"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "CAT",
+      "name_ko": "캐터필러",
+      "aliases": [
+        "caterpillar"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "GE",
+      "name_ko": "GE 에어로스페이스",
+      "aliases": [
+        "제이에어로스페이스"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "GEV",
+      "name_ko": "GE 버노바",
+      "aliases": [
+        "ge vernova"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "F",
+      "name_ko": "포드",
+      "aliases": [
+        "ford"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "GM",
+      "name_ko": "제너럴모터스",
+      "aliases": [
+        "general motors"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "RIVN",
+      "name_ko": "리비안",
+      "aliases": [
+        "rivian"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "LCID",
+      "name_ko": "루시드 그룹",
+      "aliases": [
+        "루시드",
+        "lucid"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "NIO",
+      "name_ko": "니오",
+      "aliases": [
+        "nio"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "BABA",
+      "name_ko": "알리바바",
+      "aliases": [
+        "alibaba"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "PDD",
+      "name_ko": "핀둬둬",
+      "aliases": [
+        "pinduoduo"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "BIDU",
+      "name_ko": "바이두",
+      "aliases": [
+        "baidu"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "JD",
+      "name_ko": "징둥닷컴",
+      "aliases": [
+        "jd.com"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "BILI",
+      "name_ko": "빌리빌리",
+      "aliases": [
+        "bilibili"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "TM",
+      "name_ko": "토요타",
+      "aliases": [
+        "toyota"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "SONY",
+      "name_ko": "소니",
+      "aliases": [
+        "sony"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "OKLO",
+      "name_ko": "오클로",
+      "aliases": [
+        "oklo"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "IONQ",
+      "name_ko": "아이온큐",
+      "aliases": [
+        "ionq"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "RGTI",
+      "name_ko": "리게티 컴퓨팅",
+      "aliases": [
+        "리게티",
+        "rigetti"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "QBTS",
+      "name_ko": "디웨이브 퀀텀",
+      "aliases": [
+        "디웨이브",
+        "d-wave"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "SOUN",
+      "name_ko": "사운드하운드 AI",
+      "aliases": [
+        "사운드하운드",
+        "soundhound"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "AI",
+      "name_ko": "C3.ai",
+      "aliases": [
+        "씨쓰리에이아이",
+        "c3 ai"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "DDOG",
+      "name_ko": "데이터독",
+      "aliases": [
+        "datadog"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "NET",
+      "name_ko": "클라우드플레어",
+      "aliases": [
+        "cloudflare"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "MDB",
+      "name_ko": "몽고DB",
+      "aliases": [
+        "몽고디비",
+        "mongodb"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "PANW",
+      "name_ko": "팔로알토 네트웍스",
+      "aliases": [
+        "팔로알토",
+        "palo alto"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "FTNT",
+      "name_ko": "포티넷",
+      "aliases": [
+        "fortinet"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "NOW",
+      "name_ko": "서비스나우",
+      "aliases": [
+        "servicenow"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "INTU",
+      "name_ko": "인튜이트",
+      "aliases": [
+        "intuit"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "ADSK",
+      "name_ko": "오토데스크",
+      "aliases": [
+        "autodesk"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "AMAT",
+      "name_ko": "어플라이드 머티어리얼즈",
+      "aliases": [
+        "어플라이드머티리얼즈",
+        "applied materials"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "LRCX",
+      "name_ko": "램리서치",
+      "aliases": [
+        "lam research"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "KLAC",
+      "name_ko": "KLA",
+      "aliases": [
+        "케이엘에이"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "MRVL",
+      "name_ko": "마벨 테크놀로지",
+      "aliases": [
+        "마벨",
+        "marvell"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "ON",
+      "name_ko": "온세미컨덕터",
+      "aliases": [
+        "온세미",
+        "on semiconductor"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "ADI",
+      "name_ko": "아날로그 디바이시스",
+      "aliases": [
+        "analog devices"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "SWKS",
+      "name_ko": "스카이웍스 솔루션즈",
+      "aliases": [
+        "skyworks"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "MCHP",
+      "name_ko": "마이크로칩 테크놀로지",
+      "aliases": [
+        "microchip"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "FSLR",
+      "name_ko": "퍼스트솔라",
+      "aliases": [
+        "first solar"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "ENPH",
+      "name_ko": "엔페이즈 에너지",
+      "aliases": [
+        "enphase"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "NEE",
+      "name_ko": "넥스트에라 에너지",
+      "aliases": [
+        "nextera"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "DUK",
+      "name_ko": "듀크 에너지",
+      "aliases": [
+        "duke energy"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "SO",
+      "name_ko": "서던 컴퍼니",
+      "aliases": [
+        "southern company"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "D",
+      "name_ko": "도미니언 에너지",
+      "aliases": [
+        "dominion energy"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "XEL",
+      "name_ko": "엑셀 에너지",
+      "aliases": [
+        "xcel energy"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "VZ",
+      "name_ko": "버라이즌",
+      "aliases": [
+        "verizon"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "T",
+      "name_ko": "AT&T",
+      "aliases": [
+        "에이티앤티",
+        "at&t"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "TMUS",
+      "name_ko": "T모바일 US",
+      "aliases": [
+        "티모바일",
+        "t mobile"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "CMCSA",
+      "name_ko": "컴캐스트",
+      "aliases": [
+        "comcast"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "CHTR",
+      "name_ko": "차터 커뮤니케이션스",
+      "aliases": [
+        "charter"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "ABT",
+      "name_ko": "애보트",
+      "aliases": [
+        "abbott"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "BMY",
+      "name_ko": "브리스톨 마이어스 스퀴브",
+      "aliases": [
+        "브리스톨마이어스",
+        "bms"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "GILD",
+      "name_ko": "길리어드 사이언스",
+      "aliases": [
+        "gilead"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "AMGN",
+      "name_ko": "암젠",
+      "aliases": [
+        "amgen"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "ISRG",
+      "name_ko": "인튜이티브 서지컬",
+      "aliases": [
+        "intuitive surgical"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "VRTX",
+      "name_ko": "버텍스 파마슈티컬스",
+      "aliases": [
+        "vertex"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "REGN",
+      "name_ko": "리제네론",
+      "aliases": [
+        "regeneron"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "HUM",
+      "name_ko": "휴매나",
+      "aliases": [
+        "humana"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "CI",
+      "name_ko": "시그나",
+      "aliases": [
+        "cigna"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "CVS",
+      "name_ko": "CVS 헬스",
+      "aliases": [
+        "씨브이에스헬스"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "UNP",
+      "name_ko": "유니언 퍼시픽",
+      "aliases": [
+        "union pacific"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "UPS",
+      "name_ko": "UPS",
+      "aliases": [
+        "유피에스"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "FDX",
+      "name_ko": "페덱스",
+      "aliases": [
+        "fedex"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "DE",
+      "name_ko": "디어앤컴퍼니",
+      "aliases": [
+        "존디어",
+        "john deere"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "HMC",
+      "name_ko": "혼다",
+      "aliases": [
+        "honda"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "GLD",
+      "name_ko": "SPDR 금 ETF",
+      "aliases": [
+        "금etf",
+        "gold"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "IAU",
+      "name_ko": "아이셰어즈 금 ETF",
+      "aliases": [
+        "금etf",
+        "ishares gold"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "SLV",
+      "name_ko": "아이셰어즈 은 ETF",
+      "aliases": [
+        "은etf",
+        "silver"
       ]
     }
   ]

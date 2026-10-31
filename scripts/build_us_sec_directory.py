@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 """SEC public ticker/company-name directory. English, not quotes or Korean translations."""
+import csv
 import datetime as dt
+import io
 import json
 import os
 from pathlib import Path
@@ -9,6 +11,7 @@ import tempfile
 from urllib.request import Request, urlopen
 
 URL = "https://www.sec.gov/files/company_tickers_exchange.json"
+MIRROR = "https://raw.githubusercontent.com/jadchaar/sec-cik-mapper/main/mappings/stocks/mappings.csv"
 DEST = Path(__file__).resolve().parents[1] / "docs/stocks/us_sec_directory_v1.json"
 EXCHANGES = {"Nasdaq", "NYSE", "NYSE American", "NYSE Arca", "Cboe BZX", "CBOE", "NYSE MKT"}
 CODE = re.compile(r"[A-Z][A-Z0-9.\-]{0,11}\Z")
@@ -34,6 +37,24 @@ def parse_sec(raw, min_count=1500):
         raise ValueError("unexpected SEC directory count: " + str(len(symbols)))
     return [symbols[k] for k in sorted(symbols)]
 
+
+def parse_mirror_csv(raw, min_count=1500):
+    if len(raw) > 5_000_000: raise ValueError("oversized mirror file")
+    reader = csv.DictReader(io.StringIO(raw.decode("utf-8-sig")))
+    if not {"Ticker", "Name", "Exchange"} <= set(reader.fieldnames or []):
+        raise ValueError("mirror CSV columns missing")
+    symbols = {}
+    for row in reader:
+        symbol, name, exchange = (row.get(k, "") for k in ("Ticker", "Name", "Exchange"))
+        if exchange not in EXCHANGES or not isinstance(symbol, str) or not isinstance(name, str): continue
+        symbol, name = symbol.strip().upper(), name.strip()
+        if not CODE.fullmatch(symbol) or not 1 <= len(name) <= 180 or not name.isprintable(): continue
+        if symbol not in symbols:
+            symbols[symbol] = {"market": "US", "symbol": symbol, "name": name, "exchange": exchange}
+    if not min_count <= len(symbols) <= 20_000:
+        raise ValueError("unexpected mirror directory count: " + str(len(symbols)))
+    return [symbols[k] for k in sorted(symbols)]
+
 def build(fetcher=None, output=DEST, min_count=1500):
     if fetcher is None:
         def fetcher():
@@ -42,10 +63,19 @@ def build(fetcher=None, output=DEST, min_count=1500):
                 "Accept": "application/json"})
             with urlopen(request, timeout=20) as response:
                 return response.read(5_000_001)
-    entries = parse_sec(fetcher(), min_count=min_count)
+    try:
+        entries = parse_sec(fetcher(), min_count=min_count)
+        source_used = URL
+    except Exception:
+        # SEC blocks shared GitHub Actions runners sometimes. Only public SEC-derived
+        # metadata from an open-source daily-updated mirror is accepted as fallback.
+        mirror_request = Request(MIRROR, headers={"User-Agent": "WUMI-public-feed/1.0"})
+        with urlopen(mirror_request, timeout=20) as response:
+            entries = parse_mirror_csv(response.read(5_000_001), min_count=min_count)
+        source_used = MIRROR
     stamp = dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds").replace("+00:00", "Z")
     doc = {"schema_version": 1, "dataset": "stock_directory_us",
-           "source": "U.S. Securities and Exchange Commission (SEC)", "source_url": URL,
+           "source": "SEC public ticker associations (daily GitHub mirror when required)", "source_url": source_used,
            "retrieved_at": stamp, "note": "Official English ticker names, not Korean translations or prices; SEC does not guarantee accuracy or scope.",
            "entries": entries}
     output = Path(output)

@@ -57,7 +57,7 @@ class FeedTests(unittest.TestCase):
                 feed.DIR = Path(temp)
                 feed.write_json(feed.DIR / "dividends.json", feed.envelope("dividends", "ok", "old", {"kr_disclosures": {"12345678": []}}))
                 with mock.patch.dict(os.environ, {"OPENDART_API_KEY": "PRIVATEKEY"}, clear=True):
-                    result = feed.collect_dividends({"dart_corp_codes": ["12345678"]})
+                    result = feed.collect_kr_dividends({"dart_corp_codes": ["12345678"]})
                 self.assertEqual(result["status"], "unavailable")
                 self.assertEqual(result["data"], {})
             finally:

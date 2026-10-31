@@ -42,6 +42,14 @@ class UsPublicDividendTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             refresh(["SCHD", "SCHD"], today=TODAY)
 
+    def test_provider_frequency_is_explicit_not_guessed(self):
+        raw = example()
+        raw["dividend"]["frequency"] = "quarterly"
+        item = parse_dividend("SCHD", raw)
+        self.assertEqual(item["payment_frequency"], "quarterly")
+        raw["dividend"]["frequency"] = "surprise"
+        self.assertIsNone(parse_dividend("SCHD", raw)["payment_frequency"])
+
     def test_nonpayer_is_not_a_zero_dividend_receipt(self):
         data, fresh, failed = refresh(["IONQ"],
             fetcher=lambda _: {"symbol": "IONQ", "as_of": "2026-10-30", "dividend": {}},

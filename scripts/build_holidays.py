@@ -14,6 +14,25 @@ DOCS = ROOT / "docs"
 PROVIDER = "python-holidays (KR rule-based calendar)"
 
 
+
+def display_name(name):
+    """Prefer familiar Korean calendar labels; never modify the holiday date."""
+    text = str(name).strip()
+    replacements = {
+        "기독탄신일": "크리스마스",
+        "성탄절": "크리스마스",
+        "신정연휴": "신정",
+        "설날 전날": "설날 연휴",
+        "설날 다음날": "설날 연휴",
+        "추석 전날": "추석 연휴",
+        "추석 다음날": "추석 연휴",
+        "부처님오신날": "부처님 오신 날",
+        "대체 휴일": "대체공휴일",
+    }
+    for original, replacement in replacements.items():
+        text = text.replace(original, replacement)
+    return text
+
 def render_year(year, factory=None):
     if not 2000 <= year <= 2100:
         raise ValueError("year outside supported publishing range")
@@ -25,7 +44,7 @@ def render_year(year, factory=None):
     for date, name in sorted(source.items()):
         if date.year != year:
             continue
-        label = str(name).strip()
+        label = display_name(name)
         if not label or len(label) > 70:
             raise ValueError("invalid holiday name")
         rows.append({"date": date.isoformat(), "name": label})

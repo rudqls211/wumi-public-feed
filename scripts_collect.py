@@ -9,7 +9,6 @@ import time
 from urllib.parse import urlencode
 from urllib.request import Request, urlopen
 from xml.etree import ElementTree as ET
-from scripts.us_dividends import refresh as refresh_us_dividends
 
 ROOT = pathlib.Path(__file__).resolve().parent
 DIR = ROOT / "docs" / "data"
@@ -105,7 +104,7 @@ def collect_quotes(catalog):
     return envelope("quotes", "ok", "Licensed EOD reference", quotes,
                     min(q["source_at"] for q in quotes.values()))
 
-def collect_kr_dividends(catalog):
+def collect_dividends(catalog):
     companies = list(dict.fromkeys(catalog.get("dart_corp_codes", [])))
     if len(companies) > 12 or any(not isinstance(c, str) or not re.fullmatch(r"\d{8}", c) for c in companies):
         raise ValueError("invalid public DART allowlist")
@@ -138,36 +137,6 @@ def collect_kr_dividends(catalog):
         return keep_or_unavailable("dividends", "OpenDART", "공시 결과 없음")
     return envelope("dividends", "ok", "OpenDART published annual filings",
                     {"kr_disclosures": items, "us_payment_history": {}}, str(year))
-
-def collect_dividends(catalog):
-    """Public fixed-list US dividend reference + separately licensed DART data.
-
-    No user holdings or positions are transmitted. Null means not announced,
-    never estimated. US data requires attribution to the provider.
-    """
-    old_data = existing("dividends").get("data", {})
-    if not isinstance(old_data, dict):
-        old_data = {}
-    symbols = catalog.get("us_dividend_symbols", [])
-    us, fresh = refresh_us_dividends(symbols, old_data.get("us"))
-    kr = collect_kr_dividends(catalog)
-    kr_data = kr.get("data", {}) if isinstance(kr, dict) else {}
-    result_data = {}
-    if us:
-        result_data["us"] = us
-        result_data["attribution"] = "US dividend reference data by SmarterDividends"
-        result_data["source_url"] = "https://smarterdividends.com/dividend-api"
-    if kr.get("status") in ("ok", "stale") and isinstance(kr_data, dict):
-        disclosures = kr_data.get("kr_disclosures")
-        if isinstance(disclosures, dict) and disclosures:
-            result_data["kr_disclosures"] = disclosures
-    if not result_data:
-        return keep_or_unavailable("dividends", "SmarterDividends / OpenDART", "미국 배당 자료를 아직 받지 못했어요.")
-    latest = max((x.get("as_of", "") for x in us.values() if isinstance(x, dict)), default="")
-    return envelope("dividends", "ok" if fresh or kr.get("status") == "ok" else "stale",
-                    "SmarterDividends (US reference) / OpenDART (KR license-gated)",
-                    result_data, latest or None,
-                    note="미국 종목별 무료 참고 정보. 출처 링크를 함께 확인하세요. 개별 지급 금액·지급일은 공란일 수 있어요.")
 
 def collect_tax():
     year = dt.datetime.now(dt.timezone.utc).year

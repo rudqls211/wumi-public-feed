@@ -1,0 +1,11 @@
+{
+  "year": 2026,
+  "reviewed_by_operator": false,
+  "reviewed_at": null,
+  "notes": "Reference only; unverified draft. Do not enable remotely or modify WUMI financial/tax calculations until official Korean tax-law review.",
+  "pension_savings_credit_cap_krw": 6000000,
+  "pension_combined_credit_cap_krw": 9000000,
+  "housing_subscription_income_deduction_contribution_cap_krw": 3000000,
+  "housing_subscription_income_deduction_rate": 0.4,
+  "housing_subscription_salary_threshold_krw": 70000000
+}

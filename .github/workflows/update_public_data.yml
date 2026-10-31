@@ -5,6 +5,8 @@ on:
     branches: [main]
     paths:
       - 'scripts_collect.py'
+      - 'scripts/**'
+      - 'docs/stocks/**'
       - 'tests/**'
       - 'config/**'
       - '.github/workflows/update_public_data.yml'
@@ -33,6 +35,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Install holiday calendar dependency
+        run: python -m pip install 'holidays>=0.83,<1'
       - name: Collect public data
         env:
           TWELVEDATA_API_KEY: ${{ secrets.TWELVEDATA_API_KEY }}
@@ -41,13 +45,15 @@ jobs:
           DART_PUBLIC_REDISPLAY_LICENSE_CONFIRMED: ${{ vars.DART_PUBLIC_REDISPLAY_LICENSE_CONFIRMED }}
           KASI_SERVICE_KEY: ${{ secrets.KASI_SERVICE_KEY }}
         run: python scripts_collect.py
+      - name: Build public Korean holiday calendars
+        run: python scripts/build_holidays.py
       - name: Run regression tests
         run: python -m unittest discover -s tests -v
       - name: Persist successful public JSON snapshots
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add docs/data
+          git add docs/data docs/holidays
           if ! git diff --cached --quiet; then
             git commit -m 'Persist public WUMI feed [skip ci]'
             git push origin HEAD:main

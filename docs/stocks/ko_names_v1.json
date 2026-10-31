@@ -1,0 +1,539 @@
+{
+  "schema_version": 1,
+  "dataset": "stock_names",
+  "updated_at": "2026-10-31",
+  "source": "WUMI manually curated display aliases; not a licensed market-price feed",
+  "entries": [
+    {
+      "market": "US",
+      "symbol": "AAPL",
+      "name_ko": "애플",
+      "aliases": [
+        "apple"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "MSFT",
+      "name_ko": "마이크로소프트",
+      "aliases": [
+        "microsoft",
+        "마소"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "NVDA",
+      "name_ko": "엔비디아",
+      "aliases": [
+        "nvidia"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "GOOGL",
+      "name_ko": "알파벳 A",
+      "aliases": [
+        "구글",
+        "google",
+        "alphabet"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "GOOG",
+      "name_ko": "알파벳 C",
+      "aliases": [
+        "구글",
+        "google",
+        "alphabet"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "AMZN",
+      "name_ko": "아마존",
+      "aliases": [
+        "amazon"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "META",
+      "name_ko": "메타",
+      "aliases": [
+        "메타플랫폼스",
+        "facebook"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "TSLA",
+      "name_ko": "테슬라",
+      "aliases": [
+        "tesla"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "PLTR",
+      "name_ko": "팔란티어",
+      "aliases": [
+        "팔란티어테크놀로지스",
+        "palantir"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "RKLB",
+      "name_ko": "로켓랩",
+      "aliases": [
+        "로켓 랩",
+        "rocketlab"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "AVGO",
+      "name_ko": "브로드컴",
+      "aliases": [
+        "broadcom"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "AMD",
+      "name_ko": "AMD",
+      "aliases": [
+        "에이엠디",
+        "advancedmicrodevices"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "INTC",
+      "name_ko": "인텔",
+      "aliases": [
+        "intel"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "MU",
+      "name_ko": "마이크론",
+      "aliases": [
+        "마이크론테크놀로지",
+        "micron"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "TSM",
+      "name_ko": "TSMC",
+      "aliases": [
+        "대만반도체"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "ASML",
+      "name_ko": "ASML",
+      "aliases": [
+        "에이에스엠엘"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "ARM",
+      "name_ko": "ARM",
+      "aliases": [
+        "암홀딩스"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "NFLX",
+      "name_ko": "넷플릭스",
+      "aliases": [
+        "netflix"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "COIN",
+      "name_ko": "코인베이스",
+      "aliases": [
+        "coinbase"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "MSTR",
+      "name_ko": "스트래티지",
+      "aliases": [
+        "마이크로스트래티지",
+        "microstrategy"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "SOFI",
+      "name_ko": "소파이",
+      "aliases": [
+        "sofi"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "HOOD",
+      "name_ko": "로빈후드",
+      "aliases": [
+        "robinhood"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "APP",
+      "name_ko": "앱러빈",
+      "aliases": [
+        "applovin"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "CRWD",
+      "name_ko": "크라우드스트라이크",
+      "aliases": [
+        "crowdstrike"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "SMCI",
+      "name_ko": "슈퍼마이크로컴퓨터",
+      "aliases": [
+        "supermicro"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "LLY",
+      "name_ko": "일라이릴리",
+      "aliases": [
+        "eli lilly"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "JNJ",
+      "name_ko": "존슨앤드존슨",
+      "aliases": [
+        "johnson"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "KO",
+      "name_ko": "코카콜라",
+      "aliases": [
+        "coca cola"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "PEP",
+      "name_ko": "펩시코",
+      "aliases": [
+        "pepsico"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "O",
+      "name_ko": "리얼티인컴",
+      "aliases": [
+        "realty income"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "SCHD",
+      "name_ko": "슈왑 미국배당주 ETF",
+      "aliases": [
+        "슈드",
+        "schwab dividend"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "VOO",
+      "name_ko": "뱅가드 S&P500 ETF",
+      "aliases": [
+        "뱅가드500"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "VTI",
+      "name_ko": "뱅가드 미국전체시장 ETF",
+      "aliases": [
+        "뱅가드토탈마켓"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "QQQ",
+      "name_ko": "인베스코 QQQ ETF",
+      "aliases": [
+        "나스닥100",
+        "invesco qqq"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "QQQM",
+      "name_ko": "인베스코 나스닥100 ETF",
+      "aliases": [
+        "qqq mini"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "SPY",
+      "name_ko": "SPDR S&P500 ETF",
+      "aliases": [
+        "spdr 500"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "IVV",
+      "name_ko": "아이셰어즈 S&P500 ETF",
+      "aliases": [
+        "ishares 500"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "JEPI",
+      "name_ko": "JP모건 미국주식 프리미엄인컴 ETF",
+      "aliases": [
+        "제피",
+        "jp morgan equity premium"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "JEPQ",
+      "name_ko": "JP모건 나스닥 프리미엄인컴 ETF",
+      "aliases": [
+        "제프큐"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "DGRO",
+      "name_ko": "아이셰어즈 배당성장 ETF",
+      "aliases": [
+        "ishares dgro"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "VYM",
+      "name_ko": "뱅가드 고배당 ETF",
+      "aliases": [
+        "vanguard high dividend"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "SGOV",
+      "name_ko": "아이셰어즈 초단기국채 ETF",
+      "aliases": [
+        "ishares sgov"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "QYLD",
+      "name_ko": "글로벌X 나스닥100 커버드콜 ETF",
+      "aliases": [
+        "global x qyld"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "XYLD",
+      "name_ko": "글로벌X S&P500 커버드콜 ETF",
+      "aliases": [
+        "global x xyld"
+      ]
+    },
+    {
+      "market": "US",
+      "symbol": "TLT",
+      "name_ko": "아이셰어즈 미국 장기국채 ETF",
+      "aliases": [
+        "ishares tlt"
+      ]
+    },
+    {
+      "market": "KR",
+      "symbol": "005930",
+      "name_ko": "삼성전자",
+      "aliases": [
+        "samsung electronics"
+      ]
+    },
+    {
+      "market": "KR",
+      "symbol": "000660",
+      "name_ko": "SK하이닉스",
+      "aliases": [
+        "에스케이하이닉스",
+        "sk hynix"
+      ]
+    },
+    {
+      "market": "KR",
+      "symbol": "005380",
+      "name_ko": "현대차",
+      "aliases": [
+        "현대자동차",
+        "hyundai motor"
+      ]
+    },
+    {
+      "market": "KR",
+      "symbol": "000270",
+      "name_ko": "기아",
+      "aliases": [
+        "kia"
+      ]
+    },
+    {
+      "market": "KR",
+      "symbol": "035420",
+      "name_ko": "NAVER",
+      "aliases": [
+        "네이버"
+      ]
+    },
+    {
+      "market": "KR",
+      "symbol": "035720",
+      "name_ko": "카카오",
+      "aliases": [
+        "kakao"
+      ]
+    },
+    {
+      "market": "KR",
+      "symbol": "068270",
+      "name_ko": "셀트리온",
+      "aliases": [
+        "celltrion"
+      ]
+    },
+    {
+      "market": "KR",
+      "symbol": "373220",
+      "name_ko": "LG에너지솔루션",
+      "aliases": [
+        "엘지에너지솔루션"
+      ]
+    },
+    {
+      "market": "KR",
+      "symbol": "207940",
+      "name_ko": "삼성바이오로직스",
+      "aliases": [
+        "samsung biologics"
+      ]
+    },
+    {
+      "market": "KR",
+      "symbol": "005490",
+      "name_ko": "POSCO홀딩스",
+      "aliases": [
+        "포스코홀딩스"
+      ]
+    },
+    {
+      "market": "KR",
+      "symbol": "006400",
+      "name_ko": "삼성SDI",
+      "aliases": [
+        "삼성에스디아이"
+      ]
+    },
+    {
+      "market": "KR",
+      "symbol": "012330",
+      "name_ko": "현대모비스",
+      "aliases": [
+        "hyundai mobis"
+      ]
+    },
+    {
+      "market": "KR",
+      "symbol": "028260",
+      "name_ko": "삼성물산",
+      "aliases": [
+        "samsung c&t"
+      ]
+    },
+    {
+      "market": "KR",
+      "symbol": "086790",
+      "name_ko": "하나금융지주",
+      "aliases": [
+        "하나금융"
+      ]
+    },
+    {
+      "market": "KR",
+      "symbol": "069500",
+      "name_ko": "KODEX 200",
+      "aliases": [
+        "코덱스200",
+        "kodex200"
+      ]
+    },
+    {
+      "market": "KR",
+      "symbol": "102110",
+      "name_ko": "TIGER 200",
+      "aliases": [
+        "타이거200",
+        "tiger200"
+      ]
+    },
+    {
+      "market": "KR",
+      "symbol": "360750",
+      "name_ko": "TIGER 미국S&P500",
+      "aliases": [
+        "타이거미국sp500",
+        "tiger미국s&p500"
+      ]
+    },
+    {
+      "market": "KR",
+      "symbol": "133690",
+      "name_ko": "TIGER 미국나스닥100",
+      "aliases": [
+        "타이거나스닥100"
+      ]
+    },
+    {
+      "market": "KR",
+      "symbol": "379800",
+      "name_ko": "KODEX 미국S&P500",
+      "aliases": [
+        "코덱스미국sp500"
+      ]
+    }
+  ]
+}

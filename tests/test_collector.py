@@ -89,6 +89,37 @@ class FeedTests(unittest.TestCase):
             finally:
                 feed.DIR, feed.CONFIG = old_dir, old_config
 
+    def test_observed_us_dates_keep_prior_event(self):
+        import datetime as dt
+        today = dt.datetime.now(dt.timezone.utc).date()
+        previous_date = (today - dt.timedelta(days=70)).isoformat()
+        next_date = (today + dt.timedelta(days=25)).isoformat()
+        def record(date):
+            return {"symbol": "KO", "as_of": today.isoformat(),
+                    "next_ex_date": date, "next_pay_date": None,
+                    "next_declared_amount_usd": None,
+                    "annual_amount_usd": 2.12, "payment_frequency": "quarterly",
+                    "source_url": "https://smarterdividends.com/stocks/KO",
+                    "is_actual_receipt": False}
+        with tempfile.TemporaryDirectory() as temp:
+            old = feed.DIR
+            try:
+                feed.DIR = Path(temp)
+                feed.write_json(feed.DIR / "dividends.json", feed.envelope(
+                    "dividends", "ok", "SmarterDividends",
+                    {"us_history": {"KO": [record(previous_date)]}}))
+                with mock.patch.object(feed, "refresh_us_dividends",
+                        return_value=({"KO": record(next_date)}, 1, 0)):
+                    with mock.patch.object(feed, "collect_kr_dividends",
+                            return_value={"status": "unavailable", "data": {}}):
+                        value = feed.collect_dividends({"us_dividend_symbols": ["KO"]})
+                archive = value["data"]["us_history"]["KO"]
+                self.assertEqual({v["next_ex_date"] for v in archive},
+                                 {previous_date, next_date})
+                self.assertTrue(all(v["is_actual_receipt"] is False for v in archive))
+            finally:
+                feed.DIR = old
+
     def test_unreviewed_tax_is_not_served(self):
         current_year = feed.dt.datetime.now(feed.dt.timezone.utc).year
         with tempfile.TemporaryDirectory() as temp:

@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "dataset": "index",
+  "status": "ok",
+  "generated_at": "2026-10-31T00:00:00Z",
+  "source_at": null,
+  "provider": "WUMI shared data",
+  "data": {
+    "fx": "fx.json",
+    "quotes": "quotes.json",
+    "dividends": "dividends.json",
+    "tax_policy": "tax_policy.json",
+    "holidays": "holidays.json"
+  },
+  "note": null
+}

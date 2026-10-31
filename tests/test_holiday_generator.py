@@ -4,7 +4,7 @@ from pathlib import Path
 from tempfile import TemporaryDirectory
 import unittest
 
-from scripts.build_holidays import render_year, publish
+from scripts.build_holidays import render_year, publish, display_name
 
 def fake_holidays(country, years, language):
     assert country == "KR"
@@ -14,6 +14,12 @@ def fake_holidays(country, years, language):
             dt.date(year, 3, 1): "삼일절"}
 
 class HolidayGeneratorTests(unittest.TestCase):
+    def test_friendly_names(self):
+        self.assertEqual(display_name("기독탄신일"), "크리스마스")
+        self.assertEqual(display_name("신정연휴"), "신정")
+        self.assertEqual(display_name("부처님오신날 대체 휴일"), "부처님 오신 날 대체공휴일")
+        self.assertEqual(display_name("추석 다음날"), "추석 연휴")
+
     def test_dart_contract(self):
         data = render_year(2026, factory=fake_holidays)
         self.assertEqual(data["year"], 2026)

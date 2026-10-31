@@ -1,7 +1,7 @@
 {
   "data": {},
   "dataset": "holidays",
-  "generated_at": "2026-10-31T03:26:25Z",
+  "generated_at": "2026-10-31T03:40:22Z",
   "note": "공휴일 API 키 미등록",
   "provider": "KASI special days",
   "schema_version": 1,

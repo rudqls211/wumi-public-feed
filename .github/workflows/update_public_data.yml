@@ -1,31 +1,57 @@
 name: Update shared WUMI public data
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts_collect.py'
+      - 'tests/**'
+      - 'config/**'
+      - '.github/workflows/update_public_data.yml'
+      - 'docs/index.html'
   schedule:
     - cron: '17 2,14 * * *'
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 concurrency:
-  group: wumi-public-feed-pages
+  group: wumi-public-feed
   cancel-in-progress: false
 jobs:
   publish:
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 15
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Collect public FX and preserve safe placeholders
+      - name: Collect public data
+        env:
+          TWELVEDATA_API_KEY: ${{ secrets.TWELVEDATA_API_KEY }}
+          QUOTE_PUBLIC_REDISPLAY_LICENSE_CONFIRMED: ${{ vars.QUOTE_PUBLIC_REDISPLAY_LICENSE_CONFIRMED }}
+          OPENDART_API_KEY: ${{ secrets.OPENDART_API_KEY }}
+          DART_PUBLIC_REDISPLAY_LICENSE_CONFIRMED: ${{ vars.DART_PUBLIC_REDISPLAY_LICENSE_CONFIRMED }}
+          KASI_SERVICE_KEY: ${{ secrets.KASI_SERVICE_KEY }}
         run: python scripts_collect.py
-      - name: Test collector contracts
+      - name: Run regression tests
         run: python -m unittest discover -s tests -v
+      - name: Persist successful public JSON snapshots
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add docs/data
+          if ! git diff --cached --quiet; then
+            git commit -m 'Persist public WUMI feed [skip ci]'
+            git push origin HEAD:main
+          fi
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

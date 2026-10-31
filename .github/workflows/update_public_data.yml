@@ -47,13 +47,15 @@ jobs:
         run: python scripts_collect.py
       - name: Build public Korean holiday calendars
         run: python scripts/build_holidays.py
+      - name: Refresh SEC public US ticker directory
+        run: python scripts/build_us_sec_directory.py
       - name: Run regression tests
         run: python -m unittest discover -s tests -v
       - name: Persist successful public JSON snapshots
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add docs/data docs/holidays
+          git add docs/data docs/holidays docs/stocks
           if ! git diff --cached --quiet; then
             git commit -m 'Persist public WUMI feed [skip ci]'
             git push origin HEAD:main

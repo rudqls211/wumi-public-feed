@@ -1,9 +1,35 @@
 {
   "data": {
     "us": {
+      "JEPI": {
+        "annual_amount_usd": 4.563,
+        "as_of": "2026-11-01",
+        "date_status": "provider_reported",
+        "is_actual_receipt": false,
+        "next_declared_amount_usd": null,
+        "next_ex_date": "2026-11-02",
+        "next_pay_date": "2026-11-04",
+        "payment_frequency": "monthly",
+        "source": "SmarterDividends",
+        "source_url": "https://smarterdividends.com/stocks/JEPI",
+        "symbol": "JEPI"
+      },
+      "JEPQ": {
+        "annual_amount_usd": 6.886,
+        "as_of": "2026-11-01",
+        "date_status": "provider_reported",
+        "is_actual_receipt": false,
+        "next_declared_amount_usd": null,
+        "next_ex_date": "2026-11-02",
+        "next_pay_date": "2026-11-04",
+        "payment_frequency": "monthly",
+        "source": "SmarterDividends",
+        "source_url": "https://smarterdividends.com/stocks/JEPQ",
+        "symbol": "JEPQ"
+      },
       "KO": {
         "annual_amount_usd": 2.12,
-        "as_of": "2026-10-31",
+        "as_of": "2026-11-01",
         "date_status": "provider_reported",
         "is_actual_receipt": false,
         "next_declared_amount_usd": null,
@@ -16,7 +42,7 @@
       },
       "MSFT": {
         "annual_amount_usd": 3.92,
-        "as_of": "2026-10-31",
+        "as_of": "2026-11-01",
         "date_status": "provider_reported",
         "is_actual_receipt": false,
         "next_declared_amount_usd": null,
@@ -26,6 +52,19 @@
         "source": "SmarterDividends",
         "source_url": "https://smarterdividends.com/stocks/MSFT",
         "symbol": "MSFT"
+      },
+      "SGOV": {
+        "annual_amount_usd": 3.666,
+        "as_of": "2026-11-01",
+        "date_status": "provider_reported",
+        "is_actual_receipt": false,
+        "next_declared_amount_usd": null,
+        "next_ex_date": "2026-11-02",
+        "next_pay_date": "2026-11-05",
+        "payment_frequency": "monthly",
+        "source": "SmarterDividends",
+        "source_url": "https://smarterdividends.com/stocks/SGOV",
+        "symbol": "SGOV"
       }
     },
     "us_attribution": {
@@ -34,10 +73,40 @@
       "scope": "limited public reference list, not all securities"
     },
     "us_history": {
+      "JEPI": [
+        {
+          "annual_amount_usd": 4.563,
+          "as_of": "2026-11-01",
+          "date_status": "provider_reported",
+          "is_actual_receipt": false,
+          "next_declared_amount_usd": null,
+          "next_ex_date": "2026-11-02",
+          "next_pay_date": "2026-11-04",
+          "payment_frequency": "monthly",
+          "source": "SmarterDividends",
+          "source_url": "https://smarterdividends.com/stocks/JEPI",
+          "symbol": "JEPI"
+        }
+      ],
+      "JEPQ": [
+        {
+          "annual_amount_usd": 6.886,
+          "as_of": "2026-11-01",
+          "date_status": "provider_reported",
+          "is_actual_receipt": false,
+          "next_declared_amount_usd": null,
+          "next_ex_date": "2026-11-02",
+          "next_pay_date": "2026-11-04",
+          "payment_frequency": "monthly",
+          "source": "SmarterDividends",
+          "source_url": "https://smarterdividends.com/stocks/JEPQ",
+          "symbol": "JEPQ"
+        }
+      ],
       "KO": [
         {
           "annual_amount_usd": 2.12,
-          "as_of": "2026-10-31",
+          "as_of": "2026-11-01",
           "date_status": "provider_reported",
           "is_actual_receipt": false,
           "next_declared_amount_usd": null,
@@ -52,7 +121,7 @@
       "MSFT": [
         {
           "annual_amount_usd": 3.92,
-          "as_of": "2026-10-31",
+          "as_of": "2026-11-01",
           "date_status": "provider_reported",
           "is_actual_receipt": false,
           "next_declared_amount_usd": null,
@@ -63,14 +132,29 @@
           "source_url": "https://smarterdividends.com/stocks/MSFT",
           "symbol": "MSFT"
         }
+      ],
+      "SGOV": [
+        {
+          "annual_amount_usd": 3.666,
+          "as_of": "2026-11-01",
+          "date_status": "provider_reported",
+          "is_actual_receipt": false,
+          "next_declared_amount_usd": null,
+          "next_ex_date": "2026-11-02",
+          "next_pay_date": "2026-11-05",
+          "payment_frequency": "monthly",
+          "source": "SmarterDividends",
+          "source_url": "https://smarterdividends.com/stocks/SGOV",
+          "symbol": "SGOV"
+        }
       ]
     }
   },
   "dataset": "dividends",
-  "generated_at": "2026-11-01T03:01:58Z",
+  "generated_at": "2026-11-01T14:52:00Z",
   "note": "미국 배당락일 참고용; 지급일·주당 금액은 제공된 경우에만 표시.",
   "provider": "SmarterDividends (US) / OpenDART (KR license gated)",
   "schema_version": 1,
-  "source_at": "2026-10-31",
+  "source_at": "2026-11-01",
   "status": "ok"
 }

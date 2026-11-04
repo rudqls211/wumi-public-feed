@@ -3,7 +3,7 @@
     "us": {
       "AAPL": {
         "annual_amount_usd": 1.08,
-        "as_of": "2026-11-03",
+        "as_of": "2026-11-04",
         "date_status": "provider_reported",
         "is_actual_receipt": false,
         "next_declared_amount_usd": null,
@@ -16,7 +16,7 @@
       },
       "KO": {
         "annual_amount_usd": 2.12,
-        "as_of": "2026-11-03",
+        "as_of": "2026-11-04",
         "date_status": "provider_reported",
         "is_actual_receipt": false,
         "next_declared_amount_usd": null,
@@ -29,7 +29,7 @@
       },
       "MSFT": {
         "annual_amount_usd": 3.92,
-        "as_of": "2026-11-03",
+        "as_of": "2026-11-04",
         "date_status": "provider_reported",
         "is_actual_receipt": false,
         "next_declared_amount_usd": null,
@@ -50,7 +50,7 @@
       "AAPL": [
         {
           "annual_amount_usd": 1.08,
-          "as_of": "2026-11-03",
+          "as_of": "2026-11-04",
           "date_status": "provider_reported",
           "is_actual_receipt": false,
           "next_declared_amount_usd": null,
@@ -95,7 +95,7 @@
       "KO": [
         {
           "annual_amount_usd": 2.12,
-          "as_of": "2026-11-03",
+          "as_of": "2026-11-04",
           "date_status": "provider_reported",
           "is_actual_receipt": false,
           "next_declared_amount_usd": null,
@@ -110,7 +110,7 @@
       "MSFT": [
         {
           "annual_amount_usd": 3.92,
-          "as_of": "2026-11-03",
+          "as_of": "2026-11-04",
           "date_status": "provider_reported",
           "is_actual_receipt": false,
           "next_declared_amount_usd": null,
@@ -140,10 +140,10 @@
     }
   },
   "dataset": "dividends",
-  "generated_at": "2026-11-04T03:04:37Z",
+  "generated_at": "2026-11-04T15:06:16Z",
   "note": "미국 배당락일 참고용; 지급일·주당 금액은 제공된 경우에만 표시.",
   "provider": "SmarterDividends (US) / OpenDART (KR license gated)",
   "schema_version": 1,
-  "source_at": "2026-11-03",
+  "source_at": "2026-11-04",
   "status": "ok"
 }

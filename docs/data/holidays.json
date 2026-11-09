@@ -2,7 +2,7 @@
   "schema_version": 1,
   "dataset": "holidays",
   "status": "ok",
-  "generated_at": "2026-11-08T14:53:23Z",
+  "generated_at": "2026-11-09T03:03:39Z",
   "source_at": "2026",
   "provider": "python-holidays (KR rule-based calendar)",
   "data": {

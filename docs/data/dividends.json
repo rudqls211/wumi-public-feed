@@ -140,7 +140,7 @@
     }
   },
   "dataset": "dividends",
-  "generated_at": "2026-11-09T15:11:18Z",
+  "generated_at": "2026-11-10T03:02:38Z",
   "note": "미국 배당락일 참고용; 지급일·주당 금액은 제공된 경우에만 표시.",
   "provider": "SmarterDividends (US) / OpenDART (KR license gated)",
   "schema_version": 1,

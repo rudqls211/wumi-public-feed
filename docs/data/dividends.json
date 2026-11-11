@@ -39,6 +39,19 @@
         "source": "SmarterDividends",
         "source_url": "https://smarterdividends.com/stocks/MSFT",
         "symbol": "MSFT"
+      },
+      "O": {
+        "annual_amount_usd": 3.26,
+        "as_of": "2026-11-10",
+        "date_status": "provider_reported",
+        "is_actual_receipt": false,
+        "next_declared_amount_usd": null,
+        "next_ex_date": "2026-11-30",
+        "next_pay_date": "2026-12-15",
+        "payment_frequency": "monthly",
+        "source": "SmarterDividends",
+        "source_url": "https://smarterdividends.com/stocks/O",
+        "symbol": "O"
       }
     },
     "us_attribution": {
@@ -122,6 +135,21 @@
           "symbol": "MSFT"
         }
       ],
+      "O": [
+        {
+          "annual_amount_usd": 3.26,
+          "as_of": "2026-11-10",
+          "date_status": "provider_reported",
+          "is_actual_receipt": false,
+          "next_declared_amount_usd": null,
+          "next_ex_date": "2026-11-30",
+          "next_pay_date": "2026-12-15",
+          "payment_frequency": "monthly",
+          "source": "SmarterDividends",
+          "source_url": "https://smarterdividends.com/stocks/O",
+          "symbol": "O"
+        }
+      ],
       "SGOV": [
         {
           "annual_amount_usd": 3.666,
@@ -140,7 +168,7 @@
     }
   },
   "dataset": "dividends",
-  "generated_at": "2026-11-10T15:05:32Z",
+  "generated_at": "2026-11-11T03:04:55Z",
   "note": "미국 배당락일 참고용; 지급일·주당 금액은 제공된 경우에만 표시.",
   "provider": "SmarterDividends (US) / OpenDART (KR license gated)",
   "schema_version": 1,

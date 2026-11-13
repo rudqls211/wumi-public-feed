@@ -1,19 +1,6 @@
 {
   "data": {
     "us": {
-      "AAPL": {
-        "annual_amount_usd": 1.08,
-        "as_of": "2026-11-12",
-        "date_status": "provider_reported",
-        "is_actual_receipt": false,
-        "next_declared_amount_usd": null,
-        "next_ex_date": "2026-11-12",
-        "next_pay_date": "2026-11-16",
-        "payment_frequency": "quarterly",
-        "source": "SmarterDividends",
-        "source_url": "https://smarterdividends.com/stocks/AAPL",
-        "symbol": "AAPL"
-      },
       "KO": {
         "annual_amount_usd": 2.12,
         "as_of": "2026-11-12",
@@ -168,7 +155,7 @@
     }
   },
   "dataset": "dividends",
-  "generated_at": "2026-11-12T15:11:53Z",
+  "generated_at": "2026-11-13T03:02:10Z",
   "note": "미국 배당락일 참고용; 지급일·주당 금액은 제공된 경우에만 표시.",
   "provider": "SmarterDividends (US) / OpenDART (KR license gated)",
   "schema_version": 1,

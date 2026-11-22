@@ -2,34 +2,34 @@
   "data": {
     "CNY": {
       "currency": "CNY",
-      "krw_per_unit": 200.13,
-      "source_at": "2026-11-21",
+      "krw_per_unit": 200.28,
+      "source_at": "2026-11-22",
       "unit": 1
     },
     "EUR": {
       "currency": "EUR",
-      "krw_per_unit": 1466.83,
-      "source_at": "2026-11-21",
+      "krw_per_unit": 1467.72,
+      "source_at": "2026-11-22",
       "unit": 1
     },
     "JPY": {
       "currency": "JPY",
-      "krw_per_unit": 8.3732,
-      "source_at": "2026-11-21",
+      "krw_per_unit": 8.3858,
+      "source_at": "2026-11-22",
       "unit": 1
     },
     "USD": {
       "currency": "USD",
-      "krw_per_unit": 1334.86,
-      "source_at": "2026-11-21",
+      "krw_per_unit": 1335.94,
+      "source_at": "2026-11-22",
       "unit": 1
     }
   },
   "dataset": "fx",
-  "generated_at": "2026-11-21T20:34:15Z",
+  "generated_at": "2026-11-22T09:51:43Z",
   "note": null,
   "provider": "Frankfurter daily reference rates",
   "schema_version": 1,
-  "source_at": "2026-11-21",
+  "source_at": "2026-11-22",
   "status": "ok"
 }
